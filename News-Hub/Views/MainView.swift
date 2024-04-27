@@ -14,6 +14,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
+            ChannelView()
+                .tabItem {
+                    Label("Channels", systemImage: "globe")
+                }
             ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person.fill")

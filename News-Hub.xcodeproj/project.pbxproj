@@ -10,7 +10,6 @@
 		CD3C246A2BBD6B3000CCB396 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C24692BBD6B3000CCB396 /* RootViewModel.swift */; };
 		CD65B9512BB2D15B00E929C4 /* News_HubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65B9502BB2D15B00E929C4 /* News_HubApp.swift */; };
 		CD65B9532BB2D15B00E929C4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65B9522BB2D15B00E929C4 /* RootView.swift */; };
-		CD65B9552BB2D15E00E929C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD65B9542BB2D15E00E929C4 /* Assets.xcassets */; };
 		CD65B9582BB2D15E00E929C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD65B9572BB2D15E00E929C4 /* Preview Assets.xcassets */; };
 		CD65B9602BB3501800E929C4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65B95F2BB3501800E929C4 /* HomeView.swift */; };
 		CD65B9652BB358DA00E929C4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65B9642BB358DA00E929C4 /* NetworkManager.swift */; };
@@ -37,6 +36,9 @@
 		CD65B99C2BB43B8300E929C4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65B99B2BB43B8300E929C4 /* ProfileViewModel.swift */; };
 		CD65B9A62BB4538200E929C4 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65B9A52BB4538200E929C4 /* OnboardingPageView.swift */; };
 		CD65B9A82BB4539400E929C4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65B9A72BB4539400E929C4 /* OnboardingView.swift */; };
+		CD8557EC2BD032C3003E709C /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8557EB2BD032C3003E709C /* ChannelView.swift */; };
+		CD8557F02BD041A4003E709C /* ChannelNewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8557EF2BD041A4003E709C /* ChannelNewsList.swift */; };
+		CD8A7D592BDCEFD300D86173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8A7D582BDCEFD300D86173 /* Assets.xcassets */; };
 		CDA096D22BB5770B003D40D2 /* UpdateEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA096D12BB5770B003D40D2 /* UpdateEmailView.swift */; };
 		CDA096D42BB5771A003D40D2 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA096D32BB5771A003D40D2 /* UpdatePasswordView.swift */; };
 		CDA096D72BB6BDB6003D40D2 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA096D62BB6BDB6003D40D2 /* UserManager.swift */; };
@@ -50,7 +52,6 @@
 		CD65B94D2BB2D15B00E929C4 /* News-Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News-Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD65B9502BB2D15B00E929C4 /* News_HubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_HubApp.swift; sourceTree = "<group>"; };
 		CD65B9522BB2D15B00E929C4 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		CD65B9542BB2D15E00E929C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD65B9572BB2D15E00E929C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD65B95F2BB3501800E929C4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CD65B9642BB358DA00E929C4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		CD65B99B2BB43B8300E929C4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		CD65B9A52BB4538200E929C4 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		CD65B9A72BB4539400E929C4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CD8557EB2BD032C3003E709C /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+		CD8557EF2BD041A4003E709C /* ChannelNewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelNewsList.swift; sourceTree = "<group>"; };
+		CD8A7D582BDCEFD300D86173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDA096D12BB5770B003D40D2 /* UpdateEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmailView.swift; sourceTree = "<group>"; };
 		CDA096D32BB5771A003D40D2 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
 		CDA096D62BB6BDB6003D40D2 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 				CD65B96F2BB3760600E929C4 /* ListView.swift */,
 				CD65B9712BB3761800E929C4 /* NewsCell.swift */,
 				CD65B9772BB3F42700E929C4 /* NewsArticleWebView.swift */,
+				CD8557EB2BD032C3003E709C /* ChannelView.swift */,
+				CD8557EF2BD041A4003E709C /* ChannelNewsList.swift */,
 			);
 			path = NewsViews;
 			sourceTree = "<group>";
@@ -287,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				CD65B9812BB41B5900E929C4 /* GoogleService-Info.plist */,
-				CD65B9542BB2D15E00E929C4 /* Assets.xcassets */,
+				CD8A7D582BDCEFD300D86173 /* Assets.xcassets */,
 				CDA096E02BBC9A9C003D40D2 /* API.swift */,
 			);
 			path = Components;
@@ -387,7 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD65B9582BB2D15E00E929C4 /* Preview Assets.xcassets in Resources */,
-				CD65B9552BB2D15E00E929C4 /* Assets.xcassets in Resources */,
+				CD8A7D592BDCEFD300D86173 /* Assets.xcassets in Resources */,
 				CD65B9822BB41B5900E929C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,8 +412,10 @@
 				CD65B97E2BB416B800E929C4 /* LoginView.swift in Sources */,
 				CD65B9672BB35A2B00E929C4 /* PostData.swift in Sources */,
 				CD65B9652BB358DA00E929C4 /* NetworkManager.swift in Sources */,
+				CD8557EC2BD032C3003E709C /* ChannelView.swift in Sources */,
 				CDA096E12BBC9A9C003D40D2 /* API.swift in Sources */,
 				CD65B9722BB3761800E929C4 /* NewsCell.swift in Sources */,
+				CD8557F02BD041A4003E709C /* ChannelNewsList.swift in Sources */,
 				CD65B9802BB416C800E929C4 /* RegistrationView.swift in Sources */,
 				CD65B9782BB3F42700E929C4 /* NewsArticleWebView.swift in Sources */,
 				CD65B96A2BB3696000E929C4 /* NewsViewModel.swift in Sources */,

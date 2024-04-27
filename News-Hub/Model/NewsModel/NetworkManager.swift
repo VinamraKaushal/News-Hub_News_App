@@ -13,6 +13,7 @@ class NetworkManager: ObservableObject {
     private let baseUrlString = "https://newsapi.org/v2/"
     private let inTopHeadlines = "top-headlines?country=in"
     static var newsCategory = ""
+    static var newsDomain = "he"
     
     func getNews(completion: @escaping (([Article]?) -> Void)) {
         let urlString = "\(baseUrlString)\(inTopHeadlines)&apiKey=\(API.key)"
@@ -32,6 +33,22 @@ class NetworkManager: ObservableObject {
     
     func getNewsWithCategory(completion: @escaping (([Article]?) -> Void)) {
         let urlString = "\(baseUrlString)\(inTopHeadlines)&category=\(NetworkManager.newsCategory)&apiKey=\(API.key)"
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard error == nil, let data = data else {
+                completion(nil)
+                return
+            }
+            let newsRes = try? JSONDecoder().decode(Results.self, from: data)
+            newsRes == nil ? completion(nil) : completion(newsRes!.articles)
+        }.resume()
+    }
+    
+    func getNewsWithDomain(completion: @escaping (([Article]?) -> Void)) {
+        let urlString = "\(baseUrlString)everything?domains=\(NetworkManager.newsDomain)&apiKey=\(API.key)"
         guard let url = URL(string: urlString) else {
             completion(nil)
             return

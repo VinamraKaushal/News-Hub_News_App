@@ -20,6 +20,11 @@ class NewsListVM: ObservableObject {
         }
     }
     
+    func load(domain: String) {
+        NetworkManager.newsDomain = domain
+        getNewsWithDomain()
+    }
+    
     private func getNews() {
         let networkManager = NetworkManager()
         networkManager.getNews { (newsArticles) in
@@ -35,6 +40,18 @@ class NewsListVM: ObservableObject {
     private func getNewsWithCategory() {
         let networkManager = NetworkManager()
         networkManager.getNewsWithCategory { (newsArticles) in
+            guard let news = newsArticles else { return }
+            let newsVM = news.map(NewsViewModel.init)
+            self.getImage(for: newsVM)
+            DispatchQueue.main.async {
+                self.news = newsVM
+            }
+        }
+    }
+    
+    private func getNewsWithDomain() {
+        let networkManager = NetworkManager()
+        networkManager.getNewsWithDomain { (newsArticles) in
             guard let news = newsArticles else { return }
             let newsVM = news.map(NewsViewModel.init)
             self.getImage(for: newsVM)
